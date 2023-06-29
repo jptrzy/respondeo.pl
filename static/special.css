@@ -1,0 +1,18 @@
+.contact_entry {
+    display: grid;
+    grid-template-columns: 2em 1em auto;
+    grid-template-areas: "icon . text";
+    align-items: center;
+    padding: 1em;
+}
+
+.contact_entry > img.icon {
+    display: block;
+    height: 2em;
+    grid-area: icon;
+}
+
+.contact_entry > div {
+    display: block;
+    grid-area: text;
+}
