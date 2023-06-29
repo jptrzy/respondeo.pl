@@ -1,0 +1,110 @@
+@import url(https://fonts.bunny.net/css?family=albert-sans:500,500i);
+
+:root {
+    --bg: #222;
+    --fg: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes zoom {
+    0%   {filter: blur(0.1em);}
+    100% {filter: none;}
+}
+
+body {
+    min-height: 100vh;
+
+    background-color: var(--fg);
+    color: var(--bg);
+    
+    font-size: 12pt;
+    font-family: 'Albert Sans', sans-serif;
+}
+
+.app {
+    max-width: 65em;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    padding-top: 1.5em;
+    margin: 0 auto 0 auto;
+
+    text-align: center;
+    font-variant: small-caps;
+    user-select: none;
+}
+
+header > h1 > img {
+    height: 2em;
+    width: 2em;
+    vertical-align: middle;
+    display: inline;
+}
+
+header > h1 {
+    display: inline;
+    font-size: 4em;
+}
+
+menu {
+    text-align: center;
+    font-variant: small-caps;
+
+    border-top: 0.1em solid;
+    border-bottom: 0.1em solid;
+
+    margin: 1em;
+    padding: 0.6em;
+}
+
+menu > a {
+    padding: 0.5em;
+    margin: 0.3em 1em;
+    display: inline-block;
+}
+
+menu > a {
+    text-decoration: none;
+    color: var(--bg);
+}
+
+article {
+    padding: 0.5em 2em;
+    height: 100%;
+}
+
+article > img:not(.icon) {
+    max-width: 100%;
+    border-radius: 1em;
+    margin: 1em 0;
+}
+
+p {
+    margin: 2em 0;
+}
+
+footer {
+    padding: 2em;
+    margin-top: auto;
+    text-align: center;
+    color: #444;
+}
+
+footer .icon {
+    display: inline-block;
+    max-height: 1.4em;
+    vertical-align: middle;
+    margin: 0 0.2em;
+}
+
+footer a {
+    text-decoration: none;
+}
